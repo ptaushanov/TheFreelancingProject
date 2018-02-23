@@ -1,0 +1,81 @@
+/*Itroduction*/
+.text-project{
+    background-color: cornflowerblue;
+    border-top:1px solid white;
+    border-bottom:1px solid white;
+    color: white;
+    padding:1vw;
+    font-size:2vw;
+    text-align: left;
+    padding-left:3vw;
+}
+
+h1{
+    padding: 2vw;
+    color:darkslategray;
+    text-align: center;
+    font-size: 3vw;
+}
+
+#fastdraw-img{
+    display: block;
+    margin: auto;
+    width: 95%;
+    border: 4px solid black;
+}
+
+#fastdraw-p{
+    width:95%;
+    display: block;
+    margin: auto;
+    margin-bottom: 3.5vw;
+    padding: 1.3vw;
+    text-align: center;
+    font-family: Verdana, sans-serif;
+    font-size: 1.6vw;
+    background-color: lightskyblue;
+    color:rgb(10, 10, 10);
+    border-radius: 20px;
+}
+
+@media screen and (max-width:900px){
+
+    #fastdraw-p{
+        font-size: 12pt;
+    }
+}
+
+@media screen and (max-width:900px){
+/*Project scaling fix #1*/
+    .text-project{
+        padding-left:4vw;
+        font-size:3vw;
+    }
+
+}
+
+@media screen and (max-width:560px){
+   /*Project scaling fix #2*/
+    .text-project{
+        padding:1.5vw;
+        font-size:3.8vw;
+        padding-left:4vw;
+    }
+
+    h1{
+        font-size: 12pt;
+    }
+
+    #fastdraw-p{
+        font-size: 10pt;
+    }
+}
+
+@media screen and (max-width:360px){
+  /*Project scaling fix #3 */
+    .text-project{
+        padding:2.5vw;
+        font-size:5vw;
+        text-align: center;
+    }
+}

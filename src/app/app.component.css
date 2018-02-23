@@ -1,0 +1,263 @@
+/*Main content stretch to fill gaps*/
+.wrapper{
+    min-height: 100vh;
+    display: -webkit-box; 
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-flex;
+    display:flex;
+    flex-direction: column;
+}
+main{
+    -webkit-box-flex:1;  
+    -webkit-flex:1;     
+    -ms-flex:1;
+    -moz-flex:1;
+    flex:1;
+}
+
+
+/*Header+Nav Menu*/
+.menu{
+    background-color:#000066; 
+    opacity: 0.94;
+}
+.menu, .menu div{
+    display: -webkit-box; 
+    display: -ms-flexbox;
+    display: -moz-box;
+    display: -webkit-flex; 
+    display: flex;        
+}
+
+
+/*Similarities Between .menu a && #intro*/
+.menu a, .menu div a, #intro{
+     color: white;
+     background: #000066;
+     font-size:18pt;
+     padding: 0.8rem 1rem;
+     font-weight: bolder;
+}
+
+
+/*Nav links Style*/
+.menu div{
+    margin-right:3%;
+}
+.menu div a{
+    margin:0 5px;
+    font-family:"Exo";
+}
+.menu div a, .menu a{
+    text-decoration:none;
+}
+
+
+/*Let us create the perfect website...*/
+#intro{
+    -webkit-box-flex:1;  
+    -webkit-flex:1;      
+    -ms-flex:1;  
+    -moz-flex:1;
+    flex:1; 
+    
+    text-align: left;
+    padding-left: 3%;
+    font-family:"Delius";
+}
+.menu div a:hover{
+    color: limegreen;
+    background-color:darkblue;
+    opacity: 0.9;
+}
+.menu div a:active{
+    color: lightseagreen;
+    padding-top:0.4rem;
+}
+
+/*Drop Menu Defaults*/
+.drop-menu{
+    display: none;
+}
+.drop-menu img{
+    height: 26px;
+    margin-top: 5px;
+    cursor: pointer;
+}
+
+
+/*Expression*/
+.present-sec{
+    background: url(../assets/f-logo_background2.png);
+    padding:2% 0;
+    
+    /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+#logo{
+    display: block;
+    margin: auto;
+    padding:2%; 
+    width: 18%;
+    height: 18%;
+    border-radius: 100%;
+    box-sizing: border-box;
+    -webkit-box-shadow: 0px 0px 15px 1px rgba(255,255,255,1);
+    -moz-box-shadow: 0px 0px 15px 1px rgba(255,255,255,1);
+    box-shadow: 0px 0px 15px 1px rgba(255,255,255,1);
+}
+
+#logo-text{
+    text-align: center;
+    text-shadow:0px 0px 10px rgba(140, 150, 250, 1);
+    color: white;
+    padding: 2% 0;
+    font-size: 4vw;
+    font-family: "Patrick Hand", cursive;
+}
+
+
+
+
+/*Footer Styling*/
+footer{
+    background-color: #000066;
+}
+.ft-nav{
+    background-color: #000080;
+    padding-bottom:15px;
+}
+.ft-img {
+    margin: auto;
+    width: 17.5em;
+    padding: 10px;
+}
+.ft-img a{
+    margin: 6px;
+}
+.ft-img a:hover img{
+    border-radius:100%;
+    box-shadow: 0px 0px 15px 5px rgb(0, 153, 255)
+}
+.ft-nav-link{
+    margin:auto;
+    width: 25%;
+    text-align: center;
+}
+.ft-nav-link a, .ft-nav-link span{
+    text-decoration: none;
+    color: white;
+    font-size:1.5vw;
+}
+.ft-nav-link a:hover{
+    text-decoration:underline;
+}
+
+/*Copyright*/
+footer div h4{
+    text-align: center;
+    text-transform: uppercase;
+    color:whitesmoke;
+    padding:0.8rem;
+}
+
+
+
+/*Responsive for all screens*/
+@media screen and (max-width:1180px){
+    
+    /*Fixed Header With Buffed Z-index*/
+    .main-header{
+        position: fixed;
+        left:0;
+        right:0;
+        top:0;
+        z-index:100;
+}
+    /*Let us create ... deletion*/
+    #intro{
+        display: none;
+    }
+    /*Atempt to inherit the flex display of the parent element*/
+    .drop-menu{
+        display: inherit;
+    }
+    /*Changing the nav flow direction*/
+    .menu,.menu div{
+        flex-direction: column;
+    }
+    .menu div{
+        margin-right:0px;
+    }
+    .menu div a{
+        text-align: left;
+    }
+    .menu div a:hover{
+        background-color: mediumseagreen;
+        color:white;
+        font-size:20pt;
+    }
+    .menu div a:active{
+        padding-top:0.6rem;
+    }
+    .menu a.drop-menu {
+        background-color: #000066;
+        border-left-style: none;
+        padding:0.6rem;
+    }
+    
+    /*Navigation menu open  + Angular*/
+    .open{
+        display: none !important;
+    }
+    
+    /*Expression scaling*/
+    .present-sec{
+        margin-top:3.1rem;
+        padding:6% 0;
+    }
+    #logo-text{
+        font-size: 6vw;
+    }
+    
+/*Footer*/
+    .ft-nav{
+        padding-bottom: 0px;
+    }
+    .ft-nav-link{
+        display: none;
+    }
+}
+
+@media screen and (max-width:900px){
+}
+
+@media screen and (max-width:560px){
+    
+    /*Drop NavBar image resize*/
+   .drop-menu img{
+        height: 22px;
+        margin-top:0;
+    }
+    /*Fixed Navbar gap*/
+    .present-sec{
+        margin-top: 2.6rem;
+        
+        /* Removing the parallax scrolling effect */
+        background-attachment: scroll;
+    }
+}
+
+@media screen and (max-width:360px){
+    /*Expression Buffing for small devices*/
+    .present-sec{
+        padding:12% 0;
+    }
+}
+
+

@@ -1,0 +1,167 @@
+/*Our Projects Style*/
+.galery{
+    background-color:whitesmoke;
+}
+.galery-img{
+    display: -webkit-box;  
+    display: -ms-flexbox; 
+    display: -moz-box;
+    display: -webkit-flex; 
+    display: flex;         
+    
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: auto;
+    width:90%;
+    background-color: white;
+}
+.text-project{
+    background-color: cornflowerblue;
+    border-top:1px solid white;
+    color: white;
+    padding:1vw;
+    font-size:2vw;
+    text-align: left;
+    padding-left:3vw;
+}
+
+/*Galery*/
+
+.p-img {
+  width: 100%;
+  height: auto;
+}
+div.three{
+  width:30.5%;
+}
+
+/*Magic Stuff*/
+.restrict{
+  width:47%;
+  padding:1vw;
+}
+.container {
+  position: relative;
+  width:100%;
+}
+
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: .5s ease;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.container:hover .overlay {
+  opacity: 1;
+}
+.container:hover .p-img {
+  filter: blur(5px);
+}
+
+.text {
+  color: white;
+  font-size: 1.8vw;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  width:80%;
+  height: 50%;
+  text-align: center;
+  transform: translate(-50%, -50%);
+  -ms-transform: translate(-50%, -50%);
+}
+.small{
+  font-size: 1.6vw;  
+}
+.big{ 
+  font-size: 3vw;
+}
+.text span{
+  font-weight: bold;
+}
+
+
+/*Mobile Galery*/
+.m-img{
+    padding: 1vw;
+    margin: auto;
+    width:92%;
+    height:47%
+}
+.galery-mobile{
+    display: none;
+}
+
+.transform{
+    width:80%;
+    background-color: #bae1ff;
+    display: block;
+    text-align: center;
+    padding: 1vh 5vw;
+    font-size:3.9vw;
+    color:#00005D;
+    }
+.transform span{
+    font-weight:bold;
+}
+
+
+/*Media Queries*/
+
+@media screen and (max-width:900px){
+    /*Our Project scaling fix #1*/
+.text-project{
+        padding-left:4vw;
+        font-size:3vw;
+    }
+}
+
+@media screen and (max-width:560px){
+    /*Our Project scaling fix #2*/
+    .text-project{
+        padding:1.5vw;
+        font-size:3.8vw;
+        padding-left:4vw;
+    }
+    
+    /*Galery img scale*/
+    .restrict, div.three{
+        width:92%;
+    }
+    
+    /*Swap*/
+    .galery-img{
+        display: none;
+    }
+    .galery-mobile{
+        margin:auto;
+        padding:10px 0;
+        width:90%;
+        background-color: white;
+        
+        display: -webkit-box;  
+        display: -ms-flexbox; 
+        display: -moz-box;
+        display: -webkit-flex;
+        display: flex;         
+        
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+}
+@media screen and (max-width:360px){
+/*Our Project scaling fix #3 */
+    .text-project{
+        padding:2.5vw;
+        font-size:5vw;
+        text-align: center;
+    }
+}

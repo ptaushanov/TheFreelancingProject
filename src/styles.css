@@ -1,0 +1,9 @@
+/*Replacing defaults*/
+*{
+    margin: 0;
+    padding: 0;
+    font-family: Arial;
+}
+table{
+    display: none !important;
+}

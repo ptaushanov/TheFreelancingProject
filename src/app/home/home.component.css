@@ -1,0 +1,256 @@
+/*Itroduction*/
+.text-project{
+    background-color: cornflowerblue;
+    border-top:1px solid white;
+    color: white;
+    padding:1vw;
+    font-size:2vw;
+    text-align: left;
+    padding-left:3vw;
+}
+/*Ornament*/
+.king{
+    width: 65%;
+}
+
+/*Scroll text*/
+.scroll-text{
+    color: darkslategray;
+    background-color:whitesmoke;
+    text-align:center;
+    padding:0 4vw;
+}
+.s-white{
+    width:100%;
+    background-color: white;
+    padding: 2vw 0;
+}
+.stiff{
+    max-width:78.2vw;
+    display: block;
+    margin: auto;
+}
+
+.scroll-text h2{
+    font-size: 3vw;
+}
+
+.scroll-text p{
+    font-size: 1.7vw;
+    margin-top:1vw;
+    text-align: justify;
+    color: #2a4747;
+}
+
+.scroll-text a{
+    display: block;
+    text-decoration: none;
+    width: 15%;
+    font-size: 2vw;
+    margin:2vw auto;
+    color:white;
+    background-color:dodgerblue;
+    border-radius: 5%;
+    padding: 1vw;
+}
+
+.parallax-img{
+    width:100%;
+    height:18vw;
+    background-image:url(../../assets/scroll.png);
+    
+    /* Create the parallax scrolling effect */
+        background-attachment: fixed;
+        background-position: center;
+        background-repeat: no-repeat;
+        background-size: cover;
+}
+
+
+/* Letter Section*/
+.mail-section{
+    display:block;
+    width:80%;
+    margin: auto;
+    background-color: whitesmoke;
+}
+.letter{
+    background-color: whitesmoke;
+    border: 2vw solid transparent;
+    -moz-border-image: url(../../assets/letter.png) 27;
+    -webkit-border-image: url(../../assets/letter.png) 27;
+    -o-border-image: url(../../assets/letter.png) 27;
+    border-image: url(../../assets/letter.png) 27;
+    margin: 20px auto;
+    padding:20px;
+}
+.letter h2, .letter h5, .letter p{
+    font-size: 2vw;
+    font-family: 'Kalam', cursive;
+    padding:2%;
+    color:#1a1f71;
+}
+.letter h2{
+    font-size: 2.5vw;
+}
+.letter h5{
+    text-align: right;
+}
+
+/*Emmpowered?*/
+.scroll-text-two{
+    background-color: white;
+    text-align: center;
+    padding: 2vw 0;
+    color:#1c2f2f;
+}
+
+.scroll-text-two h2{
+    font-size:2.5vw;
+    padding: 1vw 0;
+}
+.scroll-text-two p{
+    font-size:1.8vw;
+}
+.scroll-text-two h3{
+    font-family: 'Delius Swash Caps', cursive;
+    font-weight: bold;
+    font-size:2.5vw;
+    padding: 1vw 0;
+    color: black;
+}
+
+/*Media Queries for Letter Section*/
+@media screen and (max-width:1100px){
+.scroll-text p{
+    font-size: 2.2vw;
+  }
+}
+
+
+@media screen and (max-width:900px){
+        .scroll-text h2{
+        font-size: 4vw;
+    }
+
+    .scroll-text p{
+        font-size: 2.7vw;
+    }
+
+    .letter h2, .letter h5, .letter p{
+     font-size: 3vw;
+    }
+     .letter h2{
+        font-size: 3.5vw;
+     }
+    .scroll-text a{
+        width: 30% !important;
+        font-size: 3vw;
+    }
+
+    /*Home scaling fix #1*/
+    .text-project{
+        padding-left:4vw;
+        font-size:3vw;
+    }
+
+    /*Empoweres?*/
+    .scroll-text-two h2{
+        font-size:3.5vw;
+    }
+
+    .scroll-text-two p{
+        font-size:2.8vw;
+    }
+
+    .scroll-text-two h3{
+        font-size:3.5vw;
+    }
+}
+
+@media screen and (max-width:560px){
+    .scroll-text h2{
+        font-size: 4.5vw;
+    }
+
+    .scroll-text p{
+        font-size: 3.5vw;
+        word-spacing: -0.5vw;
+    }
+
+    /*Letter*/
+    .mail-section{
+        width:90%;
+    } 
+    .letter{
+          border: 3vw solid transparent;
+          -moz-border-image: url(../../assets/letter.png) 27;
+          -webkit-border-image: url(../../assets/letter.png) 27;
+          -o-border-image: url(../../assets/letter.png) 27;
+          border-image: url(../../assets/letter.png) 27;
+  }  
+        /*Home scaling fix #2*/
+    .text-project{
+        padding:1.5vw;
+        font-size:3.8vw;
+        padding-left:4vw;
+    }
+
+    /*Empoweres?*/
+    .scroll-text-two h2{
+        font-size:3.5vw;
+    }
+
+    .scroll-text-two p{
+        font-size:2.3vw;
+    }
+
+    .scroll-text-two h3{
+        font-size:3vw;
+    }
+}
+
+@media screen and (max-width:360px){
+    .scroll-text h2{
+        font-size: 5vw;
+    }
+
+    .scroll-text p{
+        font-size: 4vw;
+        opacity: 0.9;
+    }
+
+    /*Letter*/
+     .letter h2, .letter h5, .letter p{
+     font-size: 3.5vw;
+    }
+     .letter h2{
+        font-size: 4vw;
+     }
+    .scroll-text a{
+        font-size: 3.5vw;
+        font-weight: bolder;
+    }
+
+     /*Home scaling fix #3 */
+    .text-project{
+        padding:2.5vw;
+        font-size:5vw;
+        text-align: center;
+    }
+
+     /*Empoweres?*/
+    .scroll-text-two h2{
+        font-size:4vw;
+    }
+
+    .scroll-text-two p{
+        font-size:3.3vw;
+    }
+
+    .scroll-text-two h3{
+        font-size:4vw;
+    }
+}
+
+

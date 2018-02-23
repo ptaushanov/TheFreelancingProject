@@ -1,0 +1,54 @@
+<div class="wrapper">
+     <!--Header+Nav Menu-->
+    <header class="main-header">
+      <nav class="menu">
+       <h3 id="intro">Let us create the perfect website for your needs!</h3>
+            <a  class="drop-menu" (click)="navToggle()"><img src="assets/menu-icon.png"></a>
+            <div [ngClass]="{open:isOpen}">
+                <a (click)="navToggle()" [routerLink]="['/']" >Home</a>
+                <a (click)="navToggle()" [routerLink]="['/projects']" >Projects</a>
+                <a (click)="navToggle()" [routerLink]="['/overview']" >Overview</a>
+                <a (click)="navToggle()" [routerLink]="['/contacts']" >Contacts</a>
+            </div>
+        </nav>
+     </header>
+     
+     
+     <!--Main Content that is Displayed-->
+     <main>
+
+    <!--Expression-->
+    <section class="present-sec">
+        <img id="logo" src="assets/logo.png"/>
+        <h2 id="logo-text">TheFreelancingProject</h2>
+      </section>
+
+    <!--Router-->
+      <router-outlet></router-outlet>
+              
+     </main>
+    <footer>
+      <div class="ft-nav">
+        <div class="ft-img">
+            <a href="#"><img src="assets/facebook.png" alt="Facebook" width="40px" height="40px"/></a>
+            <a href="mailto:thefreelancingproject@gmail.com"><img src="assets/gmail-icon.png" alt="Gmail" width="40px" height="40px"/></a>
+            <a href="#"><img src="assets/github.png" alt="Facebook" width="40px" height="40px"/></a>
+            <a href="#"><img src="assets/instagram.png" alt="Instagram" width="40px" height="40px"/></a>
+            <a href="https://www.youtube.com/channel/UCdHaT1CKP_8S7oa5DCuZTtg"><img src="assets/youtube.png" alt="Youtube" width="40px" height="40px"/></a>
+            
+         </div>
+          <nav class="ft-nav-link">
+           <a [routerLink]="['/']" >Home</a>
+              <span> | </span>
+           <a [routerLink]="['/projects']" >Projects</a>
+              <span> | </span>
+              <a [routerLink]="['/videos']" >Videos</a>
+              <span> | </span>
+           <a [routerLink]="['/contacts']" >Contacts</a>
+          </nav>
+      </div>
+        <div>
+              <h4>&copy; TheFreelancingProject 2017</h4>
+        </div>
+    </footer>
+   </div>
