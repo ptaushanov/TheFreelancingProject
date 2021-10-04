@@ -11,4 +11,4 @@ const APP_ROUTES: Routes = [
     {path: 'contacts', component: ContactsComponent}
 ];
 
-export const routing = RouterModule.forRoot(APP_ROUTES);
+export const routing = RouterModule.forRoot(APP_ROUTES, { relativeLinkResolution: 'legacy' });
