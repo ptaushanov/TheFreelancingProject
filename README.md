@@ -1,6 +1,8 @@
 # TheFreelancingProject
 
-This project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.3.
+### Website creation project as a freelance job
+
+The project was generated with [Angular CLI](https://github.com/angular/angular-cli) version 1.2.3.
 
 ## Development server
 
